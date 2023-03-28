@@ -1,8 +1,18 @@
 import React from 'react'
-import {Text} from 'react-native'
+import {Text, View, StyleSheet} from 'react-native'
 
 export default function Home() {
   return (
-    <Text>Home</Text>
+    <View>
+      
+    </View>
   )
 }
+
+const styles = StyleSheet.create({
+  stretch: {
+    width: 50,
+    height: 200,
+    resizeMode: 'stretch',
+  },
+});
