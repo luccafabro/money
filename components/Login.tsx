@@ -15,6 +15,10 @@ export default function Login() {
       <View>
         <Pressable style={styles.button}>
           <Link href='/home' style={styles.text}>Login</Link>
+        </Pressable>
+      </View>
+      <View>
+        <Pressable style={styles.button}>
           <Link href='/register' style={styles.text}>Cadastre-se</Link>
         </Pressable>
       </View>

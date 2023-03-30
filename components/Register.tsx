@@ -6,23 +6,25 @@ export default function Register() {
   return (
     <View style={styles.container}>
       <View>
-        <Text style={styles.title}>Mon€y</Text>
+        <Text style={styles.title}>Registro</Text>
       </View>
       <View>
-        <TextInput style={styles.input} placeholder='Nome Completo' placeholderTextColor={'white'}/>
         <TextInput style={styles.input} placeholder='Login' placeholderTextColor={'white'}/>
         <TextInput style={styles.input} placeholder='Senha' placeholderTextColor={'white'}/>
-        <TextInput style={styles.input} placeholder='Repita a Senha' placeholderTextColor={'white'}/>
       </View>
       <View>
         <Pressable style={styles.button}>
-          <Link href='/home' style={styles.text}>Registar</Link>
+          <Link href='/home' style={styles.text}>Login</Link>
+        </Pressable>
+      </View>
+      <View>
+        <Pressable style={styles.button}>
+          <Link href='/register' style={styles.text}>Cadastre-se</Link>
         </Pressable>
       </View>
     </View>
   )
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,

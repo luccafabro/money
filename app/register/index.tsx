@@ -1,18 +1,11 @@
 import React from 'react'
 import {Text, View, StyleSheet} from 'react-native'
+import Register from '../../components/Register'
 
-export default function Register() {
+export default function SignIn() {
   return (
     <View>
-      
+      <Register/>
     </View>
   )
 }
-
-const styles = StyleSheet.create({
-  stretch: {
-    width: 50,
-    height: 200,
-    resizeMode: 'stretch',
-  },
-});
