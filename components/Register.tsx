@@ -1,58 +1,33 @@
-import { Pressable, StyleSheet, Text, View, TextInput } from 'react-native'
+import { NativeBaseProvider, Box, HStack, VStack, Text, Pressable, Image, Center, extendTheme, Input, Stack, Button } from 'native-base';
 import React from 'react'
 import { Link } from 'expo-router'
 
 export default function Register() {
   return (
-    <View style={styles.container}>
-      <View>
-        <Text style={styles.title}>Registro</Text>
-      </View>
-      <View>
-        <TextInput style={styles.input} placeholder='Login' placeholderTextColor={'white'}/>
-        <TextInput style={styles.input} placeholder='Senha' placeholderTextColor={'white'}/>
-      </View>
-      <View>
-        <Pressable style={styles.button}>
-          <Link href='/home' style={styles.text}>Login</Link>
-        </Pressable>
-      </View>
-      <View>
-        <Pressable style={styles.button}>
-          <Link href='/register' style={styles.text}>Cadastre-se</Link>
-        </Pressable>
-      </View>
-    </View>
+    <NativeBaseProvider theme={theme}>
+      <Box alignItems="center" bg="primary.50" size="full">
+        <Text fontSize="5xl" marginTop="100" color="white">Mon€y</Text>
+        <Stack space={4} w="75%" maxW="300px" mx="auto" marginTop="50">
+          <Input size="lg" placeholder="Nome" color="white"/>
+          <Input size="lg" placeholder="Senha" color="white" />
+          <Input size="lg" placeholder="Confirme sua senha" color="white" />
+          <VStack space={4} alignItems="center" marginTop="60">
+            <Button bg="primary.50" variant="outline">
+              <Link href="/home">
+                Registre-se
+              </Link>
+            </Button>
+          </VStack>
+        </Stack>
+      </Box>
+    </NativeBaseProvider>
   )
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#150068ff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    color: '#150068ff',
-    fontWeight: 'bold',
-  },
-  button: {
-    backgroundColor: 'white',
-    padding: 5,
-    marginTop: 15,
-  },
-  title: {
-    color: 'white',
-    fontSize: 50,
-    marginBottom: 100,
-  },
-  input: {
-    height: 40,
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
-    width: 200,
-    color: 'white',
-    borderColor: 'white',
+
+const theme = extendTheme({
+  colors: {
+    primary: {
+      50: '#150068ff'
+    }
   }
-});
+})
