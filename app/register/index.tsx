@@ -4,8 +4,6 @@ import Register from '../../components/Register'
 
 export default function SignIn() {
   return (
-    <View>
-      <Register/>
-    </View>
+    <Register/>
   )
 }
