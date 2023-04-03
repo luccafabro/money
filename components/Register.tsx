@@ -2,11 +2,11 @@ import { Pressable, StyleSheet, Text, View, TextInput } from 'react-native'
 import React from 'react'
 import { Link } from 'expo-router'
 
-export default function Login() {
+export default function Register() {
   return (
     <View style={styles.container}>
       <View>
-        <Text style={styles.title}>Mon€y</Text>
+        <Text style={styles.title}>Registro</Text>
       </View>
       <View>
         <TextInput style={styles.input} placeholder='Login' placeholderTextColor={'white'}/>
@@ -25,7 +25,6 @@ export default function Login() {
     </View>
   )
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
