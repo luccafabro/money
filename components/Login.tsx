@@ -13,10 +13,10 @@ export default function Login() {
           <VStack space={4} alignItems="center" marginTop="60">
             <Button bg="primary.50" variant="outline">
               <Link href="/home">
-                Login
+                <Text color="white">Login</Text>
               </Link>
             </Button>
-            <Link href="/register">Registre-se</Link>
+            <Link href="/register"><Text color="white">Registre-se</Text></Link>
           </VStack>
         </Stack>
       </Box>
