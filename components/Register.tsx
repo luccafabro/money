@@ -13,8 +13,8 @@ export default function Register() {
           <Input size="lg" placeholder="Confirme sua senha" color="white" />
           <VStack space={4} alignItems="center" marginTop="60">
             <Button bg="primary.50" variant="outline">
-              <Link href="/home">
-                Registre-se
+              <Link href="/home/Money">
+                <Text color="white">Registre-se</Text>
               </Link>
             </Button>
           </VStack>

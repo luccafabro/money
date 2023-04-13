@@ -7,11 +7,3 @@ export default function buildHome() {
     <Home/>
   )
 }
-
-const styles = StyleSheet.create({
-  stretch: {
-    width: 50,
-    height: 200,
-    resizeMode: 'stretch',
-  },
-});

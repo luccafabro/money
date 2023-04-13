@@ -1,6 +1,7 @@
-import { NativeBaseProvider, Box, HStack, VStack, Text, extendTheme, Avatar, Badge } from 'native-base';
+import { Center ,NativeBaseProvider, Box, HStack, VStack, Text, extendTheme, Avatar, Badge, Fab, Icon } from 'native-base';
 import React from 'react'
 import { Link } from 'expo-router'
+import { AntDesign } from "@expo/vector-icons";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
                 <Badge colorScheme="success">Conta a receber</Badge>
             </VStack>
         </HStack>
+          <Fab bg="primary.50" renderInPortal={false} shadow={2} size="sm" icon={<Icon color="white" as={AntDesign} name="plus" size="sm" />} />
     </NativeBaseProvider>
   )
 }
