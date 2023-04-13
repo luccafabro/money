@@ -12,7 +12,7 @@ export default function Login() {
           <Input size="lg" placeholder="Senha" color="white" />
           <VStack space={4} alignItems="center" marginTop="60">
             <Button bg="primary.50" variant="outline">
-              <Link href="/home">
+              <Link href="/home/Money">
                 <Text color="white">Login</Text>
               </Link>
             </Button>
